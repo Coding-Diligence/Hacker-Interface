@@ -1,0 +1,87 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #00FF00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.terminal {
+    background-color: #000;
+    border: 2px solid #00FF00;
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #00FF00;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.btn-close { background-color: #FF0000; }
+.btn-minimize { background-color: #FFD700; }
+.btn-maximize { background-color: #00FF00; }
+
+.content {
+    padding: 10px;
+    height: 85%;
+    overflow-y: auto;
+    background-color: #000;
+}
+
+.text {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.cursor {
+    background-color: #00FF00;
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    margin-left: 5px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.input span {
+    color: #00FF00;
+}
+
+.input input {
+    background-color: transparent;
+    border: none;
+    color: #00FF00;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    outline: none;
+    margin-left: 5px;
+    width: calc(100% - 25px);
+}
+
+.input input:focus {
+    border-bottom: 1px solid #00FF00;
+}
